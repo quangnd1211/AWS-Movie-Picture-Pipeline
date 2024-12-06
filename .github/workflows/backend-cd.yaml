@@ -156,7 +156,7 @@ jobs:
           mask-password: "true"
 
       - name: Update kubeconfig
-        run: aws eks update-kubeconfig --name cluster
+        run: aws eks update-kubeconfig --name movie-cluster
 
       - name: Run init.sh
         run: ./init.sh || true
